@@ -90,6 +90,24 @@ a {
     }
 }
 
+.back-to-position{
+    opacity: 0; //투명하게 만듬
+    transition: 1s;
+    &.to-top {
+        transform: translateY(150px);
+    }//위쪽으로 이동할 요소 Y축 기준으로 아래쪽으로 이동하여 놓기
+}
+
+.show .back-to-position {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .6s;
+}//show클래스가 붙으면서 요소 다시 보이며 Y축으로 이동
+  
+  
+
+
+// body
 .visual {
     background-color: #D7A42C;
     .inner{

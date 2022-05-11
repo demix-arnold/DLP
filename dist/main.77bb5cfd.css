@@ -12415,6 +12415,20 @@ a {
   color: #D7A42C;
 }
 
+.back-to-position {
+  opacity: 0;
+  transition: 1s;
+}
+.back-to-position.to-top {
+  transform: translateY(150px);
+}
+
+.show .back-to-position {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
 .visual {
   background-color: #D7A42C;
 }

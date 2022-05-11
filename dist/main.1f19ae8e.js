@@ -124,7 +124,7 @@ var fadeEls = document.querySelectorAll('.visual .fade-in');
 fadeEls.forEach(function (fadeEl, index) {
   gsap.to(fadeEl, 1, {
     opacity: 1,
-    delay: (index + 1) * .7
+    delay: (index + 1) * .8
   });
 }); // 카피라이트 년도
 
@@ -184,7 +184,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61407" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63457" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
